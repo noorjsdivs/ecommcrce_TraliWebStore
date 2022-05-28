@@ -1,0 +1,255 @@
+/* ================================================================
+                    Global Variable start here  
+===================================================================*/
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --body-font: "Hind", "sans-serif";
+  --subbody-font: "Roboto", "sans-serif";
+  --transition-value: all ease-in-out 0.3s;
+  --text-hover: #05297f;
+}
+body {
+  font-family: var(--body-font);
+}
+a {
+  color: black !important;
+}
+a:hover {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.routerLink {
+  text-decoration: none !important;
+}
+/* ================================================================
+                    Global Variable end here  
+===================================================================*/
+/* ================================================================
+                    Home part start here  
+===================================================================*/
+
+/* ======================= Header Part start here ================================  */
+.header__part {
+  width: 100%;
+  height: 100%;
+}
+.header__part .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--text-hover);
+}
+.navbar .logoImg {
+  padding: 10px 0px;
+}
+.navbar .navbar__item {
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none !important;
+  display: flex;
+  gap: 25px;
+}
+.navbar .navbar__item p {
+  transition: var(--transition-value);
+}
+.navbar .navbar__item p:hover {
+  color: var(--text-hover);
+  cursor: pointer;
+}
+.navbar .navbar__icons {
+  display: flex;
+  gap: 20px;
+}
+.navbar .navbar__icons p span {
+  font-size: 30px;
+}
+.navbar .navbar__icons p {
+  transition: var(--transition-value);
+}
+.navbar .navbar__icons p:hover {
+  color: var(--text-hover);
+  cursor: pointer;
+}
+/* ======================= Header Part end here ================================  */
+/* ======================= Banner Slider Part start here =======================  */
+.homeBanner {
+  background: red;
+  width: 100%;
+  height: 550px;
+}
+.homeBanner .homeBanner__slider {
+  width: 100%;
+  height: 550px;
+}
+.homeBanner .homeBanner__slider img {
+  width: 100%;
+  height: 550px;
+}
+.carousel .control-dots .dot {
+  background: var(--text-hover) !important;
+  border-radius: 50%;
+  width: 12px !important;
+  height: 12px !important;
+}
+
+/* ======================= Banner Slider Part end here =========================  */
+/* ================================================================
+                    Home part end here  
+===================================================================*/
+/* ================================================================
+                    Login part start here  
+===================================================================*/
+.loginForm {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  background: var(--text-hover);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  color: white;
+}
+.loginForm p {
+  margin-top: 10px;
+}
+.loginForm p span {
+  margin-left: 5px;
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+  color: white;
+  transition: var(--transition-value);
+}
+.loginForm p span:hover {
+  font-weight: 700;
+}
+.loginForm .loginForm__input h1 {
+  font-family: var(--subbody-font);
+  font-size: 30px;
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+.loginForm .loginForm__input h3 {
+  font-weight: 600;
+  font-family: var(--subbody-font);
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.loginForm .loginForm__input input {
+  width: 200px;
+  font-size: 15px;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 10px;
+}
+.loginForm .loginForm__input input::placeholder {
+  font-size: 15px;
+}
+.loginForm button {
+  background-color: var(--text-hover);
+  border: 2px solid white;
+  padding: 5px 30px;
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: var(--transition-value);
+}
+.loginForm button:hover {
+  cursor: pointer;
+  background: #011441;
+}
+
+/* ================================================================
+                    Login part end here  
+===================================================================*/
+/* ================================================================
+                    Registration part start here  
+===================================================================*/
+.registrationForm {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  background: var(--text-hover);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 20px 30px;
+}
+.registrationForm p {
+  margin-top: 10px;
+}
+.registrationForm p span {
+  margin-left: 5px;
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+  color: white;
+  transition: var(--transition-value);
+}
+.registrationForm p span:hover {
+  font-weight: 700;
+}
+.registrationForm .registrationForm__input h1 {
+  font-family: var(--subbody-font);
+  font-size: 30px;
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+.registrationForm .registrationForm__input h3 {
+  font-weight: 600;
+  font-family: var(--subbody-font);
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.registrationForm .registrationForm__input input {
+  width: 300px;
+  font-size: 15px;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 10px;
+}
+.registrationForm .registrationForm__input input::placeholder {
+  font-size: 15px;
+}
+.registrationForm button {
+  background-color: var(--text-hover);
+  border: 2px solid white;
+  padding: 5px 30px;
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: var(--transition-value);
+}
+.registrationForm button:hover {
+  cursor: pointer;
+  background: #011441;
+}
+
+/* ================================================================
+                    Registration part end here  
+===================================================================*/
